@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ajax demo</title>
+    </head>
+    <body>
+<script type="text/javascript" src="../ajax.js"></script>
+<script type="text/javascript">
+    ajax.request({
+        url:'test.php?data=10',
+        type:'jsonp',
+        jsonp:'callback',
+        callback:function(data){
+            console.log(data)
+        }
+    });
+</script>
+    </body>
+</html>
