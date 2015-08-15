@@ -77,8 +77,8 @@ var ajax = function(){
 					url = url.substring(0, url.length-1);
 				}
 				url += "&" + arguments[0].jsonp + "=ajax.jsonpCallback";
-				var JSONP=document.createElement("script");  
-    			JSONP.type="text/javascript"; 
+				var JSONP = document.createElement("script");  
+    			JSONP.type = "text/javascript"; 
     			JSONP.id = 'jsonp'; 
     			JSONP.src = url;  
     			document.getElementsByTagName("head")[0].appendChild(JSONP);
